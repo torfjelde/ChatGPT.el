@@ -7,7 +7,7 @@ try:
     from chatgpt_wrapper import ChatGPT
     from chatgpt_wrapper.config import Config
 except ImportError:
-    from chatgpt_wrapper.backends.browser.chatgpt import ChatGPT
+    from chatgpt_wrapper.backends.browser.backend import BrowserBackend
     from chatgpt_wrapper.core.config import Config
 
 server = EPCServer(('localhost', 0))
